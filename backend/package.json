@@ -11,5 +11,9 @@
     "budget"
   ],
   "author": "Manuel Vallejos",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "sequelize": "^6.21.6"
+  }
 }
