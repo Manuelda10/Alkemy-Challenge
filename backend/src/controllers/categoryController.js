@@ -16,7 +16,7 @@ const getAllCategories = async (req, res) => {
 const getOneCategory = async (req, res) => {
     const id = req.params.id
     try {
-        const category = await Category.findByBk(id)
+        const category = await Category.findByPk(id)
         res.send(category)
     } catch (err) {
         res.status(500).send({
