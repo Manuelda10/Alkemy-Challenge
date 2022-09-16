@@ -4,7 +4,8 @@ const cors = require('cors')
 const app = express()
 
 const db = require('./database/db')
-db.sequelize.sync({ force: true })
+db.sequelize.sync({})
+//force: true 
 
 const categoriesRouter = require('./routes/categoryRoutes')
 const transactionsRouter = require('./routes/transactionRoutes')
